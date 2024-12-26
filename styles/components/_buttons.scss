@@ -1,0 +1,25 @@
+@import '../abstracts/colors';
+
+$btn-floating-add-text-size: 56px;
+$btn-floating-add-position-space: 11px;
+
+.btn-floating-add-text {
+    width: $btn-floating-add-text-size;
+    height: $btn-floating-add-text-size;
+    border-radius: 50%;
+    background-color: $accent-color;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: $btn-floating-add-position-space + 55px; /*On pourrait calculer la taille de la bottom nav bar avec du js*/
+    right: $btn-floating-add-position-space; 
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 10000;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        filter: brightness(120%);
+    }
+}

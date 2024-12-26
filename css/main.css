@@ -64,6 +64,7 @@ video {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   text-size-adjust: none;
+  text-decoration: none;
 }
 
 footer,
@@ -108,7 +109,7 @@ input {
 
 *,
 body {
-  font-family: "sf-pto-text", sans-serif;
+  font-family: "sf-pro-text", sans-serif;
   color: #141619;
 }
 
@@ -121,11 +122,14 @@ body {
   margin-bottom: 45px;
 }
 
+/*pourrait etre le padding global de la page*/
 .navbar, .navbar-bottom, .navbar-top {
   position: fixed;
   z-index: 1000;
   width: 100%;
   left: 0;
+  padding: 5px 20px;
+  background-color: white;
 }
 
 .navbar-top {
@@ -134,6 +138,22 @@ body {
   justify-content: space-between;
   top: 0;
   padding: 5px 20px;
+  border-bottom: 1px solid #CED5DC;
+}
+.navbar-top a.notification {
+  position: relative;
+}
+.navbar-top a.notification:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #4C9EEB;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 .navbar-bottom {
@@ -141,6 +161,8 @@ body {
   align-items: center;
   justify-content: space-around;
   bottom: 0;
+  padding: 15px 20px;
+  border-top: 1px solid #CED5DC;
 }
 
 .image-profile {
@@ -167,7 +189,6 @@ body {
 .tweet {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #CED5DC;
   border-bottom: 1px solid #CED5DC;
   gap: 5px;
   padding: 10px 20px;
@@ -175,17 +196,19 @@ body {
 .tweet .tweet-header {
   display: flex;
   align-items: center;
-  padding: 0px 5px;
+  gap: 8px;
 }
-.tweet .tweet-header .actionFromUserIcon {
+.tweet .tweet-header .tweet-size-left {
+  display: flex;
   justify-content: flex-end;
 }
-.tweet .tweet-header p {
+.tweet .tweet-header p.tweet-size-right {
   color: #687684;
   font-size: 14px;
 }
 .tweet .tweet-content {
   display: flex;
+  gap: 8px;
 }
 .tweet .tweet-content .profile {
   display: flex;
@@ -214,10 +237,17 @@ body {
   font-weight: bold;
   color: #141619;
 }
+.tweet .tweet-content .publication .top-bar .title .user-id {
+  color: #687684;
+}
+.tweet .tweet-content .publication .top-bar .title .user-post-time {
+  color: #687684;
+}
 .tweet .tweet-content .publication .publication-text {
   font-size: 16px;
   line-height: 20.5px;
   margin-right: 20px;
+  white-space: pre-line;
 }
 .tweet .tweet-content .publication .actionButtons {
   display: flex;
@@ -239,16 +269,18 @@ body {
 .tweet .tweet-footer {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 .tweet .tweet-footer .tweet-image-profile-small {
   width: 37px;
   height: 37px;
 }
 .tweet .tweet-size-left {
-  flex: 30%;
+  flex: 10%;
+  min-width: 55px;
 }
 .tweet .tweet-size-right {
-  flex: 70%;
+  flex: 90%;
 }
 
 .small-icon {
@@ -259,6 +291,26 @@ body {
 .medium-icon {
   width: 15px;
   height: 15px;
+}
+
+.btn-floating-add-text {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #4C9EEB;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 66px; /*On pourrait calculer la taille de la bottom nav bar avec du js*/
+  right: 11px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 10000;
+  transition: background-color 0.3s ease;
+}
+.btn-floating-add-text:hover {
+  filter: brightness(120%);
 }
 
 /*# sourceMappingURL=main.css.map */

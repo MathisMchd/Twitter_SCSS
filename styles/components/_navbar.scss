@@ -1,21 +1,52 @@
 @import '../abstracts/mixin';
+@import '../abstracts/colors';
+
+$horizontal-padding: 20px; /*pourrait etre le padding global de la page*/
+$top-nav-bar-padding: 5px $horizontal-padding;
+$bottom-nav-bar-padding: 15px $horizontal-padding;
+$notification-indicator-size: 8px;
 
 .navbar {
     position: fixed;
     z-index: 1000;
     width: 100%;
     left: 0;
+    padding: 5px 20px;
+    background-color: $light-theme-bg-color;
 }
 
 .navbar-top {
     @extend .navbar;
     @include flex-center-space-between;
     top: 0;
-    padding: 5px 20px;
+    padding: $top-nav-bar-padding;
+    border-bottom: 1px solid $line-color;
+
+
+    a {
+        &.notification {
+            position: relative;
+
+            &:after {
+                content: '';
+                display: block;
+                width: $notification-indicator-size;
+                height: $notification-indicator-size;
+                background-color: $accent-color;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+                border: 1px solid white;
+            }
+        }
+    }
 }
 
 .navbar-bottom {
     @extend .navbar;
     @include flex-center-space-around;
     bottom: 0;
+    padding: $bottom-nav-bar-padding;
+    border-top: 1px solid $line-color;
 }
