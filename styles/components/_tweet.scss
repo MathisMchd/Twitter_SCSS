@@ -1,0 +1,127 @@
+@import '../abstracts/colors';
+
+
+$border-width: 2px;
+$tweet-padding: 10px 20px;
+$tweet-image-profile-size: 55px;
+$tweet-image-profile-size-small: 37px;
+
+$gap-between-profile-and-vertical-line: 5px;
+$publication-margin-right: 20px;
+
+$text-small: 12px;
+$text-medium: 14px;
+$text-large: 16px;
+
+.tweet {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $line-color;
+    border-bottom: 1px solid $line-color;
+    gap: 5px;
+    padding: $tweet-padding;
+
+    .tweet-header {
+        display: flex;
+        align-items: center;
+        padding: 0px 5px;
+
+        .actionFromUserIcon {
+            justify-content: flex-end;
+
+        }
+
+        p {
+            color: $text-secondary-color;
+            font-size: 14px;
+        }
+    }
+
+    .tweet-content {
+        display: flex;
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $gap-between-profile-and-vertical-line;
+
+            .tweet-image-profile {
+                width: $tweet-image-profile-size;
+                height: $tweet-image-profile-size;
+            }
+
+            .vertical-line {
+                flex-grow: 1;
+            }
+
+        }
+
+        .publication {
+            .top-bar {
+                display: flex;
+                justify-content: space-between;
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: $text-secondary-color;
+
+                    .user-name {
+                        font-weight: bold;
+                        color: $text-primary-color;
+                    }
+                }
+            }
+
+            .publication-text {
+                font-size: 16px;
+                line-height: 20.5px;
+                margin-right: $publication-margin-right;
+            }
+
+            .actionButtons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: $publication-margin-right;
+                max-width: 300px;
+                margin-top: 10px;
+
+                .iconButton {
+                    display: flex;
+                    align-items: center;
+                    gap: 3.5px;
+
+                    p {
+                        font-size: $text-small;
+                        color: $text-secondary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .tweet-footer {
+        display: flex;
+        align-items: center;
+
+        .tweet-image-profile-small {
+            width: $tweet-image-profile-size-small;
+            height: $tweet-image-profile-size-small;
+        }
+    }
+
+
+    //General
+    .tweet-size-left {
+        flex: 30%;
+    }
+
+    .tweet-size-right {
+        flex: 70%;
+    }
+
+
+}

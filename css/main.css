@@ -1,0 +1,264 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+*,
+body {
+  font-family: "sf-pto-text", sans-serif;
+  color: #141619;
+}
+
+.accent-color {
+  color: #4C9EEB;
+}
+
+.page-content {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.navbar, .navbar-bottom, .navbar-top {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  left: 0;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  padding: 5px 20px;
+}
+
+.navbar-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+.image-profile {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #687684;
+}
+
+.vertical-line {
+  display: inline-block;
+  width: 2px;
+  background-color: #CED5DC;
+  margin: 0 10px;
+}
+
+.horizontal-line {
+  display: inline-block;
+  height: 2px;
+  background-color: #CED5DC;
+  margin: 0 10px;
+}
+
+.tweet {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #CED5DC;
+  border-bottom: 1px solid #CED5DC;
+  gap: 5px;
+  padding: 10px 20px;
+}
+.tweet .tweet-header {
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+}
+.tweet .tweet-header .actionFromUserIcon {
+  justify-content: flex-end;
+}
+.tweet .tweet-header p {
+  color: #687684;
+  font-size: 14px;
+}
+.tweet .tweet-content {
+  display: flex;
+}
+.tweet .tweet-content .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.tweet .tweet-content .profile .tweet-image-profile {
+  width: 55px;
+  height: 55px;
+}
+.tweet .tweet-content .profile .vertical-line {
+  flex-grow: 1;
+}
+.tweet .tweet-content .publication .top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.tweet .tweet-content .publication .top-bar .title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #687684;
+}
+.tweet .tweet-content .publication .top-bar .title .user-name {
+  font-weight: bold;
+  color: #141619;
+}
+.tweet .tweet-content .publication .publication-text {
+  font-size: 16px;
+  line-height: 20.5px;
+  margin-right: 20px;
+}
+.tweet .tweet-content .publication .actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  max-width: 300px;
+  margin-top: 10px;
+}
+.tweet .tweet-content .publication .actionButtons .iconButton {
+  display: flex;
+  align-items: center;
+  gap: 3.5px;
+}
+.tweet .tweet-content .publication .actionButtons .iconButton p {
+  font-size: 12px;
+  color: #687684;
+}
+.tweet .tweet-footer {
+  display: flex;
+  align-items: center;
+}
+.tweet .tweet-footer .tweet-image-profile-small {
+  width: 37px;
+  height: 37px;
+}
+.tweet .tweet-size-left {
+  flex: 30%;
+}
+.tweet .tweet-size-right {
+  flex: 70%;
+}
+
+.small-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.medium-icon {
+  width: 15px;
+  height: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

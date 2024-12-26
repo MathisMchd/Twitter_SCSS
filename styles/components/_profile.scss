@@ -1,0 +1,11 @@
+@import '../abstracts/colors';
+
+$profile-size: 55px;
+
+
+.image-profile {
+    width: $profile-size;
+    height: $profile-size;
+    border-radius: 50%;
+    background-color: $background-grey;
+}

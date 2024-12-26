@@ -1,0 +1,13 @@
+@import '../abstracts/colors';
+
+$typography: "sf-pto-text";
+
+*,
+body {
+    font-family: $typography, sans-serif;
+    color: $text-primary-color;
+}
+
+.accent-color {
+    color: $accent-color;
+}

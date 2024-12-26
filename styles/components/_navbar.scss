@@ -1,0 +1,21 @@
+@import '../abstracts/mixin';
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+}
+
+.navbar-top {
+    @extend .navbar;
+    @include flex-center-space-between;
+    top: 0;
+    padding: 5px 20px;
+}
+
+.navbar-bottom {
+    @extend .navbar;
+    @include flex-center-space-around;
+    bottom: 0;
+}

@@ -1,0 +1,13 @@
+$icon-sizes: (
+    small: 12px,
+    medium: 15px,
+);
+
+
+
+@each $size-name, $size-value in $icon-sizes {
+    .#{$size-name}-icon {
+        width: $size-value;
+        height: $size-value;
+    }
+}
