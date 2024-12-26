@@ -1,10 +1,9 @@
-@import '../abstracts/colors';
+@use '../abstracts/colors' as CLR;
 
 .vertical-line {
     display: inline-block;
     width: 2px;
-    // height: 100%;
-    background-color: $line-color;
+    background-color: CLR.$line-color;
     margin: 0 10px;
 }
 
@@ -12,6 +11,6 @@
     display: inline-block;
     height: 2px;
     // width: 100%;
-    background-color: $line-color;
+    background-color: CLR.$line-color;
     margin: 0 10px;
 }

@@ -1,13 +1,13 @@
-@import '../abstracts/colors';
+@use '../abstracts/colors' as CLR;
 
 $typography: "sf-pro-text";
 
 *,
 body {
     font-family: $typography, sans-serif;
-    color: $text-primary-color;
+    color: CLR.$text-primary-color;
 }
 
 .accent-color {
-    color: $accent-color;
+    color: CLR.$accent-color;
 }

@@ -1,11 +1,11 @@
-@import '../abstracts/colors';
+@use '../abstracts/colors' as CLR;
 
 $profile-size: 55px;
 
-
+// en remplacement des images
 .image-profile {
     width: $profile-size;
     height: $profile-size;
     border-radius: 50%;
-    background-color: $background-grey;
+    background-color: CLR.$background-grey;
 }

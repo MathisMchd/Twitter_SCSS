@@ -1,25 +1,25 @@
 // Base
-@import '../styles/base/reset';
-@import '../styles/base/typography';
+@use '../styles/base/reset';
+@use '../styles/base/typography';
 
 
 // Abstract
-@import '../styles/abstracts/colors';
-@import '../styles/abstracts/mixin';
+@use '../styles/abstracts/colors';
+@use  '../styles/abstracts/mixin';
 
 
 // Layout
-@import '../styles/layout/header';
-@import '../styles/layout/pageContent';
-@import '../styles/layout/footer';
+@use '../styles/layout/header';
+@use '../styles/layout/pageContent';
+@use '../styles/layout/footer';
 
 
 
 
 // Components
-@import '../styles/components/navbar';
-@import '../styles/components/profile';
-@import '../styles/components/lines';
-@import '../styles/components/tweet';
-@import '../styles/components/icons';
-@import '../styles/components/buttons';
+@use '../styles/components/navbar';
+@use '../styles/components/profile';
+@use '../styles/components/lines';
+@use '../styles/components/tweet';
+@use '../styles/components/icons';
+@use '../styles/components/buttons';

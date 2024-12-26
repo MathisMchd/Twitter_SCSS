@@ -1,5 +1,6 @@
-@import '../abstracts/mixin';
-@import '../abstracts/colors';
+@use '../abstracts/colors' as CLR;
+@use '../abstracts/mixin' as MIXIN;
+
 
 $horizontal-padding: 20px; /*pourrait etre le padding global de la page*/
 $top-nav-bar-padding: 5px $horizontal-padding;
@@ -12,15 +13,15 @@ $notification-indicator-size: 8px;
     width: 100%;
     left: 0;
     padding: 5px 20px;
-    background-color: $light-theme-bg-color;
+    background-color: CLR.$light-theme-bg-color;
 }
 
 .navbar-top {
     @extend .navbar;
-    @include flex-center-space-between;
+    @include MIXIN.flex-center-space-between;
     top: 0;
     padding: $top-nav-bar-padding;
-    border-bottom: 1px solid $line-color;
+    border-bottom: 1px solid CLR.$line-color;
 
 
     a {
@@ -32,7 +33,7 @@ $notification-indicator-size: 8px;
                 display: block;
                 width: $notification-indicator-size;
                 height: $notification-indicator-size;
-                background-color: $accent-color;
+                background-color: CLR.$accent-color;
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -45,8 +46,8 @@ $notification-indicator-size: 8px;
 
 .navbar-bottom {
     @extend .navbar;
-    @include flex-center-space-around;
+    @include MIXIN.flex-center-space-around;
     bottom: 0;
     padding: $bottom-nav-bar-padding;
-    border-top: 1px solid $line-color;
+    border-top: 1px solid CLR.$line-color;
 }

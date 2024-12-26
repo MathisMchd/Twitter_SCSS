@@ -1,4 +1,4 @@
-@import '../abstracts/colors';
+@use '../abstracts/colors' as CLR;
 
 $btn-floating-add-text-size: 56px;
 $btn-floating-add-position-space: 11px;
@@ -7,7 +7,7 @@ $btn-floating-add-position-space: 11px;
     width: $btn-floating-add-text-size;
     height: $btn-floating-add-text-size;
     border-radius: 50%;
-    background-color: $accent-color;
+    background-color: CLR.$accent-color;
     cursor: pointer;
     display: flex;
     justify-content: center;

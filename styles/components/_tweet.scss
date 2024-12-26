@@ -1,4 +1,4 @@
-@import '../abstracts/colors';
+@use '../abstracts/colors' as CLR;
 
 
 $border-width: 2px;
@@ -17,7 +17,7 @@ $text-large: 16px;
 .tweet {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid $line-color;
+    border-bottom: 1px solid CLR.$line-color;
     gap: 5px;
     padding: $tweet-padding;
 
@@ -34,7 +34,7 @@ $text-large: 16px;
 
 
         p.tweet-size-right {
-            color: $text-secondary-color;
+            color: CLR.$text-secondary-color;
             font-size: 14px;
         }
     }
@@ -69,19 +69,19 @@ $text-large: 16px;
                     display: flex;
                     align-items: center;
                     gap: 5px;
-                    color: $text-secondary-color;
+                    color: CLR.$text-secondary-color;
 
                     .user-name {
                         font-weight: bold;
-                        color: $text-primary-color;
+                        color: CLR.$text-primary-color;
                     }
 
                     .user-id {
-                        color: $text-secondary-color;
+                        color: CLR.$text-secondary-color;
                     }
 
                     .user-post-time {
-                        color: $text-secondary-color;
+                        color: CLR.$text-secondary-color;
                     }
                 }
             }
@@ -108,7 +108,7 @@ $text-large: 16px;
 
                     p {
                         font-size: $text-small;
-                        color: $text-secondary-color;
+                        color: CLR.$text-secondary-color;
                     }
                 }
             }
